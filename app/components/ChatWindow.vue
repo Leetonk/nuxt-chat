@@ -54,7 +54,7 @@ watch(() => messages, pinToBottom, { deep: true })
             :class="messageClasses(message)"
           >
             <div class="message-content">
-              {{ message.content }}
+              <MarkdownRenderer :content="message.content" />
             </div>
           </div>
 
