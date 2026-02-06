@@ -14,8 +14,11 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.25",
     "@nuxt/eslint": "1.13.0",
     "@nuxt/ui": "4.4.0",
+    "ai": "6.0.73",
+    "ai-sdk-ollama": "^3.4.0",
     "eslint": "^9.39.2",
     "nuxt": "^4.3.0",
     "tailwindcss": "^4.1.18",
