@@ -1,15 +1,14 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 defineProps<{ content: string }>()
 </script>
 
 <template>
-  <ClientOnly>
-    <MDC
-      :value="content"
-      class="markdown-content"
-    />
-  </ClientOnly>
+  <MDC
+    :value="content"
+    class="markdown-content"
+  />
 </template>
+
 <style>
 .markdown-content {
   font-size: 1rem;
@@ -22,9 +21,6 @@ defineProps<{ content: string }>()
   margin-bottom: 1rem;
 }
 
-.message-user .markdown-content p {
-  margin: 0;
-}
 .markdown-content p:last-child {
   margin-bottom: 0;
 }
