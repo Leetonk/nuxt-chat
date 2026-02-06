@@ -37,4 +37,9 @@ export default defineNuxtConfig({
       langs: ['html', 'markdown', 'vue', 'typescript', 'javascript'],
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: ['debug'],
+    },
+  },
 })
