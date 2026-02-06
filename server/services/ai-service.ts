@@ -11,8 +11,8 @@ export const createOpenAIModel = (apiKey: string) => {
   const openai = createOpenAI({
     apiKey,
   })
-
-  return openai('gpt-5-mini')
+  console.log(openai)
+  return openai('gpt-4o-mini')
 }
 
 export async function generateChatResponse(model: LanguageModel, messages: ModelMessage[]) {

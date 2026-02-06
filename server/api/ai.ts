@@ -8,7 +8,7 @@ export default defineEventHandler(async (event: EventHandlerResponse) => {
   const openaiApiKey = useRuntimeConfig().openaiApiKey
 
   const openaiModel = createOpenAIModel(openaiApiKey)
-
+  console.log(openaiModel)
   const response = await generateChatResponse(openaiModel, messages)
   return {
     id,
