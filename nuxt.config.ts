@@ -1,16 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   colorMode: {
-    preference: 'dark', // default value of $colorMode.preference
-    fallback: 'light', // fallback value if not system preference found
-    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    preference: 'dark',
+    fallback: 'light',
+    storage: 'localStorage',
     storageKey: 'nuxt-color-mode',
-  },
-  runtimeConfig: {
-    apiSecret: '123',
-    public: {
-      apiBase: '/api',
-    },
   },
   $development: {
     app: {
@@ -32,4 +26,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxtjs/color-mode'],
   css: ['~/assets/css/main.css'],
+
+  runtimeConfig: {
+    openaiApiKey: '',
+  },
 })
