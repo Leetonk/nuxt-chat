@@ -10,6 +10,7 @@ export const createOllamaModel = () => {
 export const createOpenAIModel = (apiKey: string) => {
   const openai = createOpenAI({
     apiKey,
+    baseURL: 'https://api.openai.com/v1',
   })
   console.log(openai)
   return openai('gpt-4o-mini')
